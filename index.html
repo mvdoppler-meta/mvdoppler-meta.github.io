@@ -10,10 +10,68 @@
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="application/ld+json">
-    {
-      "@context": "http://schema.org/",
-      "@type": "Dataset"
-    }
+  {
+    "@context":"https://schema.org/",
+    "@type":"Dataset",
+    "name":"MVDoppler",
+    "description":"Storm Data is provided by the National Weather Service (NWS) and contain statistics on...",
+    "url":"https://catalog.data.gov/dataset/ncdc-storm-events-database",
+    "sameAs":"https://gis.ncdc.noaa.gov/geoportal/catalog/search/resource/details.page?id=gov.noaa.ncdc:C00510",
+    "identifier": ["https://doi.org/10.1000/182",
+                   "https://identifiers.org/ark:/12345/fk1234"],
+    "keywords":[
+       "ATMOSPHERE > ATMOSPHERIC PHENOMENA > RADAR",
+       "ATMOSPHERE > ATMOSPHERIC PHENOMENA > MMWave",
+       "ATMOSPHERE > ATMOSPHERIC PHENOMENA > MICRODOPPLER",
+       "ATMOSPHERE > ATMOSPHERIC PHENOMENA > MULTIVIEW"
+    ],
+    "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+    "isAccessibleForFree" : true,
+    "hasPart" : [
+      {
+        "@type": "Dataset",
+        "name": "Sub dataset 01",
+        "description": "Informative description of the first subdataset...",
+        "license" : "https://creativecommons.org/publicdomain/zero/1.0/",
+        "creator":{
+           "@type":"Organization",
+           "name": "Sub dataset 01 creator"
+        }
+      },
+    ],
+    "creator":{
+       "@type":"Organization",
+       "url": "https://www.ncei.noaa.gov/",
+       "name":"Arbabian Lab., Dept. Electrical Engineering, Stanford University",
+       "contactPoint":{
+          "@type":"ContactPoint",
+          "contactType": "customer service",
+          "telephone":"+1-828-271-4800",
+          "email":"ncei.orders@noaa.gov"
+       }
+    },
+    "funder":{
+       "@type": "Organization",
+       "sameAs": "https://ror.org/00tgqzw13",
+       "name": "Stanford University"
+    },
+    "includedInDataCatalog":{
+       "@type":"DataCatalog",
+       "name":"data.gov"
+    },
+    "distribution":[
+       {
+          "@type":"DataDownload",
+          "encodingFormat":"CSV",
+          "contentUrl":"https://www.ncdc.noaa.gov/stormevents/ftp.jsp"
+       },
+       {
+          "@type":"DataDownload",
+          "encodingFormat":"XML",
+          "contentUrl":"https://gis.ncdc.noaa.gov/all-records/catalog/search/resource/details.page?id=gov.noaa.ncdc:C00510"
+       }
+    ],
+  }
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
